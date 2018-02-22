@@ -5,7 +5,7 @@ var getClosest = require("get-closest");
 var friendList = require("../data/friends.js")
 
 var app = express();
-var PORT = 3000; // process.env.PORT ||
+var PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
